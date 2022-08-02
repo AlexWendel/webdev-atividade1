@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 3</title>
+    <style>
+        form{
+            width: 800px
+        }
+
+        fieldset > div{
+            margin: 15px 15px 15px 0;
+        }
+
+        fieldset{
+            margin: 0;
+            margin-bottom: 12px;
+        }
+        
+        label:not([for='sexo']){
+            width: 65px;
+            display: inline-block;
+        }
+
+        input#nome, input#email{
+            width: 450px;
+        }
+
+        input#idade {
+            width: 65px;
+        }
+
+        input#endereco{
+            width: 610px
+        }
+
+        input#cidade{
+            width: 400px;
+        }
+        
+        select#estado{
+            width: 42px;
+        }
+
+        input#cep{
+            width: 100px;
+        }
+
+        input#telefone-residencial, input#telefone-celular{
+            width: 120px;
+        }
+
+    </style>
+</head>
+<body >
+
+    <h1>Informações Pessoais</h1>
+
+    <form action="/submeter" method="post">
+        <fieldset style="display: block">
+            <legend>Cadastro do Cliente</legend>            
+            
+            <div>
+                <label for="nome">Nome:</label>
+                <input type="text" name="nome" id="nome" value="João">            
+            </div>
+
+            <div>
+                <label for="sexo">Sexo:</label>
+                <input type="radio" name="sexo" id="masculino" value="Masculino" checked>
+                <label for="masculino" name="masculino">Masculino</label>
+                <input type="radio" name="sexo" id="feminino" value="Masculino">
+                <label for="feminino" name="feminino">Feminino</label>
+            </div>
+
+            <div>
+            <label for="idade">Idade:</label>
+            <input type="number" name="idade" min="0" id="idade" value=1>
+            </div>  
+
+            <div>
+            <label for="endereco">Endereço:</label>
+            <input type="text" name="endereco" id="endereco" placeholder="Digite o endereço">
+            </div>
+
+            <div>            
+                <label for="cidade">Cidade:</label>
+                <input type="text" name="cidade" id="cidade" placeholder="Digite a cidade">
+            </div>
+
+            <div>
+                <label for="estado">Estado:</label>            
+                <select id="estado" name="estado">
+                    <option value="">UF</option>
+                    <option value="AC">Acre</option>
+                    <option value="AL">Alagoas</option>
+                    <option value="AP">Amapá</option>
+                    <option value="AM">Amazonas</option>
+                    <option value="BA">Bahia</option>
+                    <option value="CE">Ceará</option>
+                    <option value="DF">Distrito Federal</option>
+                    <option value="ES">Espírito Santo</option>
+                    <option value="GO">Goiás</option>
+                    <option value="MA">Maranhão</option>
+                    <option value="MT">Mato Grosso</option>
+                    <option value="MS">Mato Grosso do Sul</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="PA">Pará</option>
+                    <option value="PB">Paraíba</option>
+                    <option value="PR">Paraná</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="PI">Piauí</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                    <option value="RS">Rio Grande do Sul</option>
+                    <option value="RO">Rondônia</option>
+                    <option value="RR">Roraima</option>
+                    <option value="SC">Santa Catarina</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="SE">Sergipe</option>
+                    <option value="TO">Tocantins</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="cep">CEP:</label>
+                <input type="number" name="cep" id="cep" placeholder="XXXXXX-XXX">
+            </div>
+
+            <div>
+                <label for="telefone-residencial">Tel/Res:</label>
+                <input type="tel" name="residencial" id="telefone-residencial" placeholder="(99) 99999-9999">
+            </div>
+
+            <div>
+                <label for="telefone-celular">Tel/Cel:</label>
+                <input type="tel" name="celular" id="telefone-celular" placeholder="(99) 99999-9999">
+            </div>
+
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" placeholder="Digite o endereço de email">
+            </div>
+
+        </fieldset>
+        <button type="submit">Incluir</button>
+    </form>
+</body>
+</html>

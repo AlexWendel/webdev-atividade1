@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <style>
+        .text{
+            width: 450px;
+            padding: 10px;
+            padding-left: 25px;
+        }
+
+        input[type=radio]{
+            margin-bottom: 10px;
+        }
+        thead{
+            background-color: dimgray;
+            color: floralwhite;
+        }
+        th{
+            width: 80px;
+            padding: 8px;
+            border: 1px solid black;
+        }
+        td{
+            width: 80px;
+            padding: 8px;
+            border: 1px solid black;
+        }
+        button{
+            margin-top: 20px;
+            margin-bottom: 30px;
+        }
+        .fsets{
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        
+    </style>
+</head>
+<body>
+
+    <form action="" method="POST">
+        <div>
+            <p>
+                Nome e Sobrenome
+            </p>
+            <input class="text" type="text">
+        </div>
+        <div>
+            <p>
+                Email
+            </p>
+            <input class="text" type="email" placeholder="seuemail@dominio.com">
+        </div>
+        <div>
+            <p>
+                Telefone
+            </p>
+            <input class="text" type="tel" placeholder="(XX) XXXXX-XXXX">
+        </div>
+        <div>
+            <p>
+                Mensagem
+            </p>
+            <textarea class="text" name="" id="" cols="30" rows="10"></textarea>
+        </div>
+        <div class="fsets">
+            <fieldset class="contatos">
+                <legend>Como prefere o nosso contato?</legend>
+                <div>
+                    <input type="radio" id="em" name="contato" value="email">
+                    <label for="em">Email</label>
+                </div>
+                <div>
+                    <input type="radio" id="tel" name="contato" value="telefone">
+                    <label for="tel">Telefone</label>
+                </div>
+                <div>
+                    <input type="radio" id="whats" name="contato" value="whatsapp">
+                    <label for="whats">WhatsApp</label>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Qual horario prefere ser atendido</legend>
+                <select name="" id="">
+                    <option value="">selecione</option>
+                    <option value="">Manhã</option>
+                    <option value="">Tarde</option>
+                </select>
+            </fieldset>
+        </div>
+        <input type="checkbox" id="novidades">
+        <label for="novidades">Gostaria de receber nossas novidades por email?</label>
+    
+        <div>
+            <button>Enviar Formulario</button>
+        </div>
+    </form>
+    
+    <table>
+        <thead>
+            <tr>
+                <th>Dia</th>
+                <th>Horário</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>Segunda</td><td>8h~20h</td></tr>
+            <tr><td>Quarta</td><td>8h~20h</td></tr>
+            <tr><td>Sexta</td><td>8h~20h</td></tr>
+        </tbody>
+    </table>
+    
+</body>
+</html>
