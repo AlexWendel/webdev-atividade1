@@ -11,14 +11,24 @@
                 text-align: center;
 
             }
+
+            section {
+                border: 1px solid #ddd;
+                margin: 10px 0;
+                padding: .5em;
+                display: flex; 
+                gap: .5em; 
+                flex-direction: column; 
+                justify-content: space-around;
+            }
             
-            nav{
+            div.questoes{
                 margin-top: 20px;
             }
 
-            nav > a{
+            div.questoes > a{
                 display: inline-flex;
-                border: 1px solid black;
+                border: 1px solid #bbb;
                 padding: 20px;
             }
 
@@ -36,41 +46,65 @@
     <body>
 
     <header>
-        <h1 class="h1">Atividade 1 - Desenvolvimento Web</h1>
+        <h1 class="h1">Desenvolvimento para Web I</h1>
         <h2>Autores: <strong>Alex Wendel Oliveira da Silva</strong> e <strong>Paulo Henrique Lopes de Oliveira</strong></h2>      
-    </header> 
+    </header>
+
     <main>
-    <section style="display: flex; gap: 1em; flex-direction: column; justify-content: space-around;">
-            <h1 style="font-size: 1.5em;">Atividade 1:</h1>
-            <h2>Clique nos links abaixo para acessar cada questão</h2>
-            <nav>
+    <section>
+            <div>
+                <h1 class="h2">Atividade 1 - HTML</h1>
+                <h2>Clique nos links abaixo para acessar cada questão:</h2>
+            </div>
+            <div class="questoes">
                 <a href="atividade1/questao1.html">Questão 1</a>
                 <a href="atividade1/questao2.html">Questão 2</a>
                 <a href="atividade1/questao3.html">Questão 3</a>
                 <a href="atividade1/questao4/">Questão 4</a>
                 <a href="atividade1/questao5/">Questão 5</a>
-            </nav>
+            </div>
             <a href="https://github.com/AlexWendel/webdev1">
                 Ver Código no Github
                 <i class="fa-brands fa-github"></i>
             </a>
     </section>
 
-    <section style="display: flex; gap: 1em; flex-direction: column; justify-content: space-around;">
-        <h1 style="font-size: 1.5em;">Atividade em sala:</h1>
-        <h2>Clique nos links abaixo para acessar cada questão</h2>
-        <nav>
+    <section>
+        <div>
+            <h2 class="h2">Atividade em sala 1 - CSS</h2>
+            <h2>Clique nos links abaixo para acessar cada questão</h2>
+        </div>
+
+        <div class="questoes">
             <a href="atividade_sala1/">Questão</a>
-        </nav>
+        </div>
+
         <a href="https://github.com/AlexWendel/webdev1/tree/master/atividade_sala1">
             Ver Código no Github
             <i class="fa-brands fa-github"></i>
         </a>
-    </section>    
+    </section> 
+
+    <section>
+        <div>
+            <h2 class="h2">Atividade 03 - CSS - UNIDADE II</h2>
+            <h2>Clique nos links abaixo para acessar cada questão</h2>
+        </div>
+
+        <div class="questoes">
+            <a href="atividade_sala2/">Questão</a>
+        </div>
+
+        <a href="https://github.com/AlexWendel/webdev1/tree/master/atividade_sala2">
+            Ver Código no Github
+            <i class="fa-brands fa-github"></i>
+        </a>
+    </section> 
+    
+    
     </main>
     
     <footer>
-        <a href="">Ver Código no github</a>
     </footer>
     </body>
 </html>
