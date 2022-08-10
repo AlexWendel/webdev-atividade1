@@ -89,8 +89,11 @@ footer{
 }
 
 a{
-    
-    color: wheat;
+    color: rgb(0, 66, 12);
+}
+
+footer a{
+    color: #fefefe
 }
 
 .container{
