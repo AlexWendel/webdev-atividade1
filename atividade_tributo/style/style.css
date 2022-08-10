@@ -1,0 +1,89 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Helvetica, sans-serif;
+}
+
+header{
+    background-image: url('/img/forte_final.png');
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+    width: 100%;
+}
+
+section{
+    padding: 4rem;
+}
+
+li{
+    padding: 1rem;
+    /* color: white; */
+}
+
+h1{
+    /* color: white; */
+}
+
+main{
+    /* background-color: #50C878; */
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.white{
+    color: white;
+}
+
+.title{
+    font-size: 2rem;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #fefefe;
+    font-family: helvetica;
+}
+main {
+    justify-content: center;
+    border-bottom: 1px solid #fff;
+    /* display: flex; */
+    padding: 1em;
+}       
+main h1{
+    font-size: 2em;
+}
+
+main h2 {
+    text-align: justify;
+    font-size: 1em;
+    font-weight: 400;
+}
+
+picture{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    padding: 0;
+    margin: 0;
+    width: auto;
+}
+
+picture > img {
+    padding:0;
+    margin:0;
+    box-sizing: content-box;         
+    object-fit: cover;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;            
+}
+
+#descricao{
+    display: flex;
+}
