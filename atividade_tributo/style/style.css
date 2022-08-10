@@ -5,15 +5,16 @@
 }
 
 header{
-    background-image: url('/assets/imgs/forte_final.png');
+    background-image: url('https://lage.unifesspa.edu.br/images/forte_final.png');
     background-size: cover;
     background-position: center;
+    justify-content: center;    
     height: 200px;
     width: 100%;
 }
 
 section{
-    padding: 4rem;
+    padding: 1rem 4rem;
 }
 
 li{
@@ -32,6 +33,7 @@ main{
 .center{
     display: flex;
     justify-content: center;
+    vertical-align: middle;
     align-items: center;
 }
 
@@ -102,4 +104,12 @@ a{
 
 #lates{
     padding: 1rem;
+}
+
+ul, ol{
+    margin: 20px 2em;
+}
+
+ol > li {
+    padding: .5em;    
 }
