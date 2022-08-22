@@ -1,0 +1,105 @@
+<html>
+<head>
+	<title>Exercício Restaurante / Pizzaria</title>
+	<style>
+		body{
+			background-color: rgb(241,241,241);
+			font-family: Arial, Helvetica, sans-serif;
+		}
+
+		div.topnav{
+			color: #f2f2f2;
+			background-color: #444;
+			padding: 10px;
+		}
+
+		div.topnav > a{
+			color: inherit;
+			text-decoration: none;
+			margin-right: 20px;
+			font-size: 1em;
+		}
+
+		.titulo-principal{
+			height: 5.5em;
+			background-image: url('imagens/pizza.jpg');
+    		background-repeat: no-repeat;
+			background-size: cover;
+			background-position: center;
+			color: white;
+			font-size: 8em;
+			box-sizing: border-box;
+			margin: 0 auto;
+			text-align: center;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+		.titulo-principal > span{
+			display: inline-block;
+			vertical-align: middle;
+		}
+
+		span.preco{
+			background-color: rgb(97, 96, 99);
+			border-radius: 3px;
+			color: white;
+			float:right;
+			padding: 2px;
+		}
+
+		.listas{
+			list-style-type: none;
+		}
+		
+		#cardapio{
+			margin: 20px 0;
+			background-color: white;
+			padding: 15px;
+		}
+
+		.footer{
+			text-align: center;
+			background-color: rgb(221, 221, 221);
+			display: flexbox;
+			padding: 1.2em;
+			justify-content: center;
+			align-items: center;
+			text-align: center;
+		}
+
+	</style>
+</head>
+<body>
+
+<div class="topnav">
+  <a href="#">Inicio</a>
+  <a href="#cardapio">Cardápio</a>
+  <a href="#">Contato</a>
+</div>
+
+<div class="header"></div>
+<div class="titulo-principal"><span>PIZZARIA</span></div>
+
+<div class="row" id="cardapio">
+	<div class="card">
+		<h1>Pizzas</h1>
+		<ul class="listas">
+			<li> <p>Portuguesa - Mussarela, presunto, ovo de codorna, azeitona preta, cebola e pimentão verde.<span class="preco">R$ 29,90</span></p> </li>
+			<li> <p>4 Queijos - Mussarela, requeijão, gorgonzola e parmesão ralado.<span class="preco">R$ 29,90</span></p> </li>
+			<li> <p>Bauru - Mussarela, presunto, requeijão e tomate.<span class="preco">R$ 29,90</span></p> </li>
+			<li> <p>Frango Grelhado - Mussarela, frango, requeijão, tomate, azeitona preta e manjericão.<span class="preco">R$ 29,90</span></p> </li>
+		</ul>
+	</div>
+</div>
+
+<div class="footer">
+  <h2>Aberto</h2>
+  <p>
+	Seg - Sex das 17 às 23 horas.
+  </p>
+</div>
+
+</body>
+</html>
