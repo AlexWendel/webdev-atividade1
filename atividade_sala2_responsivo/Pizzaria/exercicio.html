@@ -1,6 +1,7 @@
 <html>
 <head>
 	<title>Exercício Restaurante / Pizzaria</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<style>
 		body{
 			background-color: rgb(241,241,241);
@@ -67,6 +68,44 @@
 			justify-content: center;
 			align-items: center;
 			text-align: center;
+		}
+
+		@media screen and (max-width: 900px){
+			div.topnav 	 	{
+				font-size: 4vw;
+				text-align: center;
+			}
+
+			.titulo-principal{
+				font-size: 13vw;
+			}
+
+			#cardapio{
+				font-size: 3vw;
+			}
+			p{
+				margin-block-end: 1em;
+			}
+			span.preco{
+				display: block;
+				float: none;
+				text-align: center;
+			}
+
+			ul{
+				display: block;
+				margin-block-start: 0px;
+				margin-block-end: 0px;
+				margin-inline-start: 0px;
+				margin-inline-end: 0px;
+				padding-inline-start: 0px;
+			}
+		}
+
+		@media (max-width: 720px) and (orientation: landscape){
+			.titulo-principal{
+				height: 80vh;
+			}
 		}
 
 	</style>
