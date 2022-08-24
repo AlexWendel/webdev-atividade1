@@ -1,0 +1,126 @@
+<html>
+<head>
+	<title>Meu primeiro e-commerce</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="utf-8">
+	
+</head>
+<style>
+	html{
+		font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	}
+
+	body{
+		background-color: rgb(241,241,241);
+	}
+
+	.header{
+		text-align: center;
+		padding: 30px;
+		background-color: white;
+	}
+
+	div.topnav{
+		margin: 0 auto;
+		color: #f2f2f2;
+		background-color: #333;
+		text-decoration: none;
+		padding: 0 16px 0 14px;
+		padding-top: 15px;
+		padding-bottom: 15px;
+		vertical-align: middle;
+	}
+
+	div.topnav > a {
+		color: inherit;
+		text-decoration: inherit;
+	}
+
+	div.topnav>a:not(:last-child){
+		margin-right: 20px;
+	}	
+	
+	.row .sellcard {
+		width: 23.40%;
+		margin: 10px;		
+		text-align: center;
+	}
+
+	.sellcard > img{
+		margin: 0 auto;
+		width: 80%;	
+	}
+
+	.row > div{
+		display: flex;
+		justify-content: space-between;
+		box-sizing: border-content;
+	}
+
+	p.descricao{
+		text-align: center;
+		font-family: Helvetica, sans-serif;
+		font-size: 15px;
+		font-style: normal;
+		font-weight: 400;
+	}
+
+	p.valor{
+		text-align: center;
+		font-size: .8em;
+		font-weight: bold;
+	}
+
+	p.compra{
+		text-align: center;
+	}
+</style>
+<body>
+
+<div class="header">
+  <h1>Loja de Roupas e Acessórios</h1>
+</div>
+
+<div class="topnav">
+	<a href="#">Home</a>
+	<a href="#">Roupas</a>
+	<a href="#">Acessórios</a>
+
+
+  <a href="#" style="float:right;display:absolute;">
+	<img src="imagens/compra.png" width="22" height="22" style="vertical-align: middle;">
+	<span>Carrinho de compras</span>
+  </a>
+</div>
+
+<div class="row">
+	<div>
+		<div class="sellcard">
+			<img src="imagens/jaqueta.jpg">
+			<p class="descricao">Jaqueta de couro - Roupa</p>
+			<p class="valor">R$ 279,00</p>
+			<p class="compra">COMPRAR</p>
+		</div>
+		<div class="sellcard">
+			<img src="imagens/bone.jpg">
+			<p class="descricao">Boné - Acessório</p>
+			<p class="valor">R$ 79,00</p>
+			<p class="compra">COMPRAR</p>
+		</div>
+		<div class="sellcard">
+			<img src="imagens/jaqueta.jpg">
+			<p class="descricao">Jaqueta de couro - Roupa</p>
+			<p class="valor">R$ 279,00</p>
+			<p class="compra">COMPRAR</p>
+		</div>
+		<div class="sellcard">
+			<img src="imagens/bone.jpg">
+			<p class="descricao">Boné - Acessório</p>
+			<p class="valor">R$ 79,00</p>
+			<p class="compra">COMPRAR</p>
+		</div>
+	</div>  
+</div>
+
+</body>
+</html>
