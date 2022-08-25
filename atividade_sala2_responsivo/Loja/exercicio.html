@@ -75,7 +75,42 @@
 		text-align: center;
 	}
 
-	
+	@media (max-width: 900px){
+		.topnav a{
+			display: block;
+			text-align: center;
+			padding: 2vw 0px;
+		}
+
+		.topnav a:last-child{
+			float: none!important;
+		}
+
+		body{
+			font-size: 3vw;
+		}
+
+		.row > div:first-child{
+			display: flex;
+			flex-direction: column;
+			text-align: center;
+			justify-content: center;
+			align-items: center;
+		}
+		.sellcard{
+			width: 75% !important;
+			font-size: 1.2em;
+		}
+		p.descricao, p.valor{
+			font-size: inherit;
+		}
+	}
+
+	@media (max-width: 720px){
+		.sellcard{
+			width: 100% !important;
+		}
+	}
 </style>
 <body>
 
