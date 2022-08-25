@@ -6,121 +6,55 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/brands.min.css" integrity="sha512-nS1/hdh2b0U8SeA8tlo7QblY6rY6C+MgkZIeRzJQQvMsFfMQFUKp+cgMN2Uuy+OtbQ4RoLMIlO2iF7bIEY3Oyg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <style>
-            body, footer{
-                text-align: center;
-
-            }
-
-            section {
-                border: 1px solid #ddd;
-                margin: 10px 0;
-                padding: .5em;
-                display: flex; 
-                gap: .5em; 
-                flex-direction: column; 
-                justify-content: space-around;
-            }
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js" integrity="sha512-RNLkV3d+aLtfcpEyFG8jRbnWHxUqVZozacROI4J2F1sTaDqo1dPQYs01OMi1t1w9Y2FdbSCDSQ2ZVdAC8bzgAg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script id="atividade-template" type="text/x-handlebars-template">
+            {{#atividades}}
+            <section>        
+                <h1 class="section-header">{{titulo}}</h1>
+                <h1 class="has-text-weight-semibold">Alunos:</h1>
+                <div class="names-wrapper">
+                    {{#alunos}}
+                        <p>{{nome}}</p>
+                    {{/alunos}}            
+                </div>           
             
-            div.questoes{
-                margin-top: 20px;
-            }
-
-            div.questoes > a{
-                display: inline-flex;
-                border: 1px solid #bbb;
-                padding: 20px;
-            }
-
-            footer{
-                position: absolute;
-                bottom: 0;
-                width: 100%;
-                padding: 20px 0 ;
-                border-top: 0.5px solid gray;
-                display: flex;
-                justify-content: center;
-            }
-        </style>
+                <div class="wrapper">
+                    <div class="questoes">
+                        <h1 class="has-text-weight-semibold">Questões:</h1>
+                        {{#questoes}}
+                            <a href="{{url}}" title="Ir para questão {{questao}}">{{questao}}</a>
+                        {{/questoes}}
+                    </div>
+                </div>
+            
+                <div class="github-link">
+                    <a class="nav-link" href="{{url_repositorio}}">
+                        <i class="fa-brands fa-github"></i>
+                        Github
+                    </a>
+                </div>
+            </section>
+            {{/atividades}}    
+        </script>
+        <link rel="stylesheet" href="style.css">
     </head>
-    <body>
 
+    <body>
     <header>
-        <h1 class="h1">Desenvolvimento para Web I</h1>     
+        <h1 class="h1 is-size-3">Desenvolvimento para Web I</h1>     
     </header>
 
-    <main>
-    <section>
-            <div>
-                <h1 class="h2">Atividade 1 - HTML</h1>
-                <h2>Clique nos links abaixo para acessar cada questão:</h2>
-                <h2><strong>Alex Wendel Oliveira da Silva</strong> e <strong>Paulo Henrique Lopes de Oliveira</strong></h2>                  
-            </div>
-            <div class="questoes">
-                <a href="atividade1/questao1.html">Questão 1</a>
-                <a href="atividade1/questao2.html">Questão 2</a>
-                <a href="atividade1/questao3.html">Questão 3</a>
-                <a href="atividade1/questao4/">Questão 4</a>
-                <a href="atividade1/questao5/">Questão 5</a>
-            </div>
-            <a href="https://github.com/AlexWendel/webdev1">
-                Ver Código no Github
-                <i class="fa-brands fa-github"></i>
-            </a>
-    </section>
-
-    <section>
-        <div>
-            <h2 class="h2">Atividade em sala 1 - CSS</h2>
-            <h2>Clique nos links abaixo para acessar cada questão</h2>
-            <h2><strong>Alex Wendel Oliveira da Silva</strong> e <strong>Paulo Henrique Lopes de Oliveira</strong></h2>              
-        </div>
-
-        <div class="questoes">
-            <a href="atividade_sala1/">Questão</a>
-        </div>
-
-        <a href="https://github.com/AlexWendel/webdev1/tree/master/atividade_sala1">
-            Ver Código no Github
-            <i class="fa-brands fa-github"></i>
-        </a>
-    </section> 
-
-    <section>
-        <div>
-            <h2 class="h2">Atividade 03 - CSS - UNIDADE II</h2>
-            <h2>Clique nos links abaixo para acessar cada questão</h2>
-            <h2><strong>Alex Wendel Oliveira da Silva</strong> e <strong>Paulo Henrique Lopes de Oliveira</strong></h2>              
-        </div>
-
-        <div class="questoes">
-            <a href="atividade_tributo/">Questão</a>
-        </div>
-
-        <a href="https://github.com/AlexWendel/webdev1/tree/master/atividade_tributo">
-            Ver Código no Github
-            <i class="fa-brands fa-github"></i>
-        </a>
-    </section> 
-    
-    <section>
-        <div>
-            <h2 class="h2">Atividade 04 -  CSS - UNIDADE II</h2>
-            <h2>Clique nos links abaixo para acessar cada questão</h2>
-            <h2><strong>Alex Wendel Oliveira da Silva</strong> e <strong>Mateus Araújo Carvalho</strong></h2>              
-        </div>
-
-        <div class="questoes">
-            <a href="atividade_sala2/Loja/exercicio.html">Questão 1</a>
-            <a href="atividade_sala2/Pizzaria/exercicio.html">Questão 2</a>
-        </div>
-
-        <a href="https://github.com/AlexWendel/webdev1/tree/master/atividade_sala2">
-            Ver Código no Github
-            <i class="fa-brands fa-github"></i>
-        </a>
-    </section>
-    
+    <main>    
     </main>
+    <script>
+        // Renderizar todas as atividades usando o template do mustache
+        fetch("atividades.json").then((data)=> data.json()).then((data) =>{
+            var template = document.getElementById("atividade-template").innerHTML;
+            var compiledTemplate = Handlebars.compile(template);
+            var result = compiledTemplate(data);
+            var main = document.getElementsByTagName("main")[0];
+            main.innerHTML = result;
+        });
+    </script>    
     </body>
 </html>
