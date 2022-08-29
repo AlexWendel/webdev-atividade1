@@ -93,7 +93,21 @@
                 }
             ],
             "url_repositorio": "https://github.com/AlexWendel/webdev1/tree/master/atividade_sala2_responsivo"
-        }
+        },
+        {
+            "titulo": "Atividade 06 - CSS Flexbox",
+            "alunos": [
+                {"nome": "Alex Wendel Oliveira da Silva"},
+                {"nome": "Paulo Henrique Lopes de Oliveira"}
+            ],
+            "questoes":[
+                {
+                    "questao": "1", 
+                    "url": "atividade6_flexbox/"
+                }
+            ],
+            "url_repositorio": "https://github.com/AlexWendel/webdev1/tree/master/atividade6_flexbox"
+        }        
 
     ]    
 }
