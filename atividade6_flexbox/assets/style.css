@@ -23,9 +23,9 @@ main {
     width: 100%;
 }
   
-.card > div:last-of-type{
+.card > div:last-of-type > p{
     word-wrap: break-word;
-    text-align: justify;          
+    text-align: justify;
 }
 
 @media (max-width: 679px) and (min-width: 420px) {
