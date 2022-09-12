@@ -121,7 +121,21 @@
                 }
             ],
             "url_repositorio": "https://github.com/AlexWendel/webdev1/tree/master/atividade7_flexbox"
-        }  
+        },
+        {
+            "titulo": "Atividade 08 - Alurinha Flexbox",
+            "alunos": [
+                {"nome": "Alex Wendel Oliveira da Silva"},
+                {"nome": "Paulo Henrique Lopes de Oliveira"}
+            ],
+            "questoes":[
+                {
+                    "questao": "1", 
+                    "url": "atividade8_cssgrid/"
+                }
+            ],
+            "url_repositorio": "https://github.com/AlexWendel/webdev1/tree/master/atividade8_cssgrid"
+        }            
 
     ]    
 }
