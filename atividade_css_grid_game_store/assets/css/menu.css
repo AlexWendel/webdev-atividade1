@@ -4,6 +4,6 @@
     padding-inline: 1em;
 }
 
-.populares{
-    padding-block: 3em;
+.menu__link:hover {
+    border-bottom: 0.2em solid rgb(60, 60, 248);
 }
