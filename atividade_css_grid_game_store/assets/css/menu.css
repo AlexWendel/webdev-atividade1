@@ -1,0 +1,9 @@
+.menu__link{
+    color: black;
+    padding-block: 0.5em;
+    padding-inline: 1em;
+}
+
+.populares{
+    padding-block: 3em;
+}
