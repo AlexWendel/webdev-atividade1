@@ -123,7 +123,7 @@
             "url_repositorio": "https://github.com/AlexWendel/webdev1/tree/master/atividade7_flexbox"
         },
         {
-            "titulo": "Atividade 08 - Alurinha Flexbox",
+            "titulo": "Atividade 08 - CSS Grid",
             "alunos": [
                 {"nome": "Alex Wendel Oliveira da Silva"},
                 {"nome": "Paulo Henrique Lopes de Oliveira"}
@@ -135,7 +135,22 @@
                 }
             ],
             "url_repositorio": "https://github.com/AlexWendel/webdev1/tree/master/atividade8_cssgrid"
-        }            
+        },
+        {
+            "titulo": "Atividade 09 - Game Store",
+            "alunos": [
+                {"nome": "Alex Wendel Oliveira da Silva"},
+                {"nome": "Paulo Henrique Lopes de Oliveira"}
+            ],
+            "questoes":[
+                {
+                    "questao": "1", 
+                    "url": "atividade_css_grid_game_store/"
+                }
+            ],
+            "url_repositorio": "https://github.com/AlexWendel/webdev1/tree/master/atividade_css_grid_game_store"
+        },        
+        
 
     ]    
 }
