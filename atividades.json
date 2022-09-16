@@ -1,0 +1,141 @@
+{
+    "atividades": [
+        {
+            "titulo": "Atividade 1 - HTML",
+            "alunos": [
+                {"nome": "Alex Wendel Oliveira da Silva"},
+                {"nome": "Paulo Henrique Lopes de Oliveira"}
+            ],
+            "questoes":[
+                {
+                    "questao": "1", 
+                    "url": "atividade1/questao1.html"
+                },
+                {
+                    "questao": "2", 
+                    "url": "atividade1/questao2.html"
+                },    
+                {
+                    "questao": "3", 
+                    "url": "atividade1/questao3.html"
+                },
+                {
+                    "questao": "4", 
+                    "url": "atividade1/questao4.html"
+                },    
+                {
+                    "questao": "5", 
+                    "url": "atividade1/questao5.html"
+                }                 
+            ],
+            "url_repositorio": "https://github.com/AlexWendel/webdev1/tree/master/atividade1"
+        },
+        {
+            "titulo": "Atividade em sala 1 - CSS",
+            "alunos": [
+                {"nome": "Alex Wendel Oliveira da Silva"},
+                {"nome": "Paulo Henrique Lopes de Oliveira"}
+            ],
+            "questoes":[
+                {
+                    "questao": "1", 
+                    "url": "atividade_sala1/"
+                }
+            ],
+            "url_repositorio": "https://github.com/AlexWendel/webdev1/tree/master/atividade_sala1"
+        },
+        {
+            "titulo": "Atividade 03 - CSS - Tributo",
+            "alunos": [
+                {"nome": "Alex Wendel Oliveira da Silva"},
+                {"nome": "Paulo Henrique Lopes de Oliveira"}
+            ],
+            "questoes":[
+                {
+                    "questao": "1", 
+                    "url": "atividade_tributo/"
+                }
+            ],
+            "url_repositorio": "https://github.com/AlexWendel/webdev1/tree/master/atividade_tributo"
+        },
+        {
+            "titulo": "Atividade 04 -  CSS - UNIDADE II",
+            "alunos": [
+                {"nome": "Alex Wendel Oliveira da Silva"},
+                {"nome": "Mateus Araújo Carvalho"}
+            ],
+            "questoes":[
+                {
+                    "questao": "1", 
+                    "url": "atividade_sala2/Loja/exercicio.html"
+                },
+                {
+                    "questao": "2", 
+                    "url": "atividade_sala2/Pizzaria/exercicio.html"
+                }
+            ],
+            "url_repositorio": "https://github.com/AlexWendel/webdev1/tree/master/atividade_sala2"
+        },
+        {
+            "titulo": "Atividade 05 -  Media Query",
+            "alunos": [
+                {"nome": "Alex Wendel Oliveira da Silva"},
+                {"nome": "Paulo Henrique Lopes de Oliveira"}
+            ],
+            "questoes":[
+                {
+                    "questao": "1", 
+                    "url": "atividade_sala2_responsivo/Loja/exercicio.html"
+                },
+                {
+                    "questao": "2", 
+                    "url": "atividade_sala2_responsivo/Pizzaria/exercicio.html"
+                }
+            ],
+            "url_repositorio": "https://github.com/AlexWendel/webdev1/tree/master/atividade_sala2_responsivo"
+        },
+        {
+            "titulo": "Atividade 06 - CSS Flexbox",
+            "alunos": [
+                {"nome": "Alex Wendel Oliveira da Silva"},
+                {"nome": "Paulo Henrique Lopes de Oliveira"}
+            ],
+            "questoes":[
+                {
+                    "questao": "1", 
+                    "url": "atividade6_flexbox/"
+                }
+            ],
+            "url_repositorio": "https://github.com/AlexWendel/webdev1/tree/master/atividade6_flexbox"
+        },
+        {
+            "titulo": "Atividade 07 - Alurinha Flexbox",
+            "alunos": [
+                {"nome": "Alex Wendel Oliveira da Silva"},
+                {"nome": "Mateus Araújo Carvalho"}
+            ],
+            "questoes":[
+                {
+                    "questao": "1", 
+                    "url": "atividade7_flexbox/"
+                }
+            ],
+            "url_repositorio": "https://github.com/AlexWendel/webdev1/tree/master/atividade7_flexbox"
+        },
+        {
+            "titulo": "Atividade 08 - Alurinha Flexbox",
+            "alunos": [
+                {"nome": "Alex Wendel Oliveira da Silva"},
+                {"nome": "Paulo Henrique Lopes de Oliveira"}
+            ],
+            "questoes":[
+                {
+                    "questao": "1", 
+                    "url": "atividade8_cssgrid/"
+                }
+            ],
+            "url_repositorio": "https://github.com/AlexWendel/webdev1/tree/master/atividade8_cssgrid"
+        }            
+
+    ]    
+}

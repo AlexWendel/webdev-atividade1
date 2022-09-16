@@ -1,0 +1,41 @@
+main > .card-container, main {
+    gap: 2em;
+}
+
+main > .card-container, main, .card {
+    display: flex;
+    flex-direction: row;    
+}
+
+main {
+    width: auto;
+    padding: 20px;
+    justify-content: space-evenly;
+}
+
+.card{    
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.card-img > img, .card > div:last-of-type{
+    width: 100%;
+}
+  
+.card > div:last-of-type > p{
+    word-wrap: break-word;
+    text-align: justify;
+}
+
+@media (max-width: 679px) and (min-width: 420px) {
+    main{
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 419px) {
+    main, main > .card-container {
+        flex-direction: column;
+    }
+}
