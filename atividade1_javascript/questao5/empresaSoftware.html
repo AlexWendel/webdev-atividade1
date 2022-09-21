@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    const fixo = 1200.00;
+    const calcComissao = venda => (venda*15/100);
+    const venda = Number(prompt("Valor total das vendas no mês R$: "));
+    const comissao = calcComissao(venda);
+    alert(`Valor fixo R$: ${fixo}\nValor da comissão R$: ${comissao.toFixed(2)} \nValor final do salário R$: ${(fixo + comissao).toFixed(2)}`);
+</script>
+</html>
