@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 6</title>
+    <script type="text/javascript">
+        const eleitors =  parseFloat(prompt("Total de eleitores:"));
+        const nulos =  parseFloat(prompt("Total de votos nulos:"));
+        const brancos =  parseFloat(prompt("Total de votos brancos:"));
+        const validos =  parseFloat(prompt("Total de votos válidos:"));
+
+        const porcentagem_nulos =  (nulos / eleitors) * 100;
+        const porcentagem_brancos =  (brancos / eleitors) * 100;
+        const porcentagem_validos =  (validos / eleitors) * 100;
+
+        alert(`Total de eleitores: ${eleitors}\n
+        Porcentagem de votos válidos: ${porcentagem_validos}%
+        Porcentagem de votos nulos: ${porcentagem_nulos}%
+        Porcentagem de votos brancos: ${porcentagem_brancos}%`);
+    </script>    
+</head>
+<body>    
+</body>
+</html>
