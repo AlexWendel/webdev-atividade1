@@ -21,11 +21,11 @@
                 },
                 {
                     "questao": "4", 
-                    "url": "atividade1/questao4.html"
+                    "url": "atividade1/questao4/"
                 },    
                 {
                     "questao": "5", 
-                    "url": "atividade1/questao5.html"
+                    "url": "atividade1/questao5/"
                 }                 
             ],
             "url_repositorio": "https://github.com/AlexWendel/webdev1/tree/master/atividade1"
