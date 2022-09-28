@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 2</title>
+</head>
+<body>
+    <!-- Uma agência bancária possui dois tipos de investimentos, conforme o quadro
+    abaixo. Faça um programa que receba o tipo do investimento e o valor do
+    investimento, calcule e mostre o valor corrigido de acordo com o tipo de
+    investimento.
+    Tipo - 1 Poupança - 5%
+    Tipo - 2 Fundo de renda fixa - 10% -->
+
+    <script type="text/javascript">
+        let tipo_investimento = parseInt(prompt("Qual o tipo de investimento? (1 - Poupança, 2 - Renda Fixa)"))
+        let valor = parseFloat(prompt("Qual o valor original?"))
+        let poupanca = valor + valor * 0.05
+        let renda_fixa = valor + valor * 0.1
+
+        if (tipo_investimento === 1){
+            console.log(`O valor corrigido será de ${poupanca}`);
+        }
+        else if (tipo_investimento === 2){
+            console.log(`O valor corrigido será de ${renda_fixa}`);        
+        }
+    </script>
+   
+</body>
+</html>

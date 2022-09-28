@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 2</title>
+</head>
+<body>
+    <!-- Faça um programa que mostre o novo preço de um produto sabendo-se que
+    este terá um desconto de 15%, mostrando também a classificação do
+    produto segundo o as informações abaixo.
+    Novo preço: de 500 para cima = CARO
+    Abaixo de 500 = BARATO -->
+
+    <script type="text/javascript">        
+        let valor = parseFloat(prompt("Qual o valor original?"));        
+        let desconto = valor * 0.15;
+        let preco = valor + valor * desconto
+        
+        if (preco >= 500){
+            console.log("Caro");
+        }
+        else {
+            console.log("Barato");
+        }
+    </script>
+   
+</body>
+</html>

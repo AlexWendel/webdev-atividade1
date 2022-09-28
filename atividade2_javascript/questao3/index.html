@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 3</title>
+</head>
+<body>
+    <!-- Faça um programa que receba a altura e o sexo de uma pessoa, calcule e
+    mostre o seu peso ideal, utilizando as seguintes fórmulas:
+    - para homens: (72 * altura) - 58;
+    - para mulheres: (62 * altura) – 44 -->
+
+    <script type="text/javascript">        
+        let sexo = prompt("Qual o seu sexo (masculino ou feminino)");
+        let altura = parseInt(prompt("Qual sua altura em centimentros? (Ex:180)"));
+        let peso_ideal = 0;
+        sexo = sexo.toLowerCase();
+
+        if (!["masculino", "feminino"].includes(sexo)){
+            console.log("Não existe");
+        }
+        else{
+            if (sexo == "masculino"){
+                peso_ideal = (72 * altura) - 58;
+            }
+            else if (sexo == "feminino"){
+                peso_ideal = (62 * altura) - 44;
+            }
+            console.log(`Seu peso ideal é: ${peso_ideal}`);
+        }
+    </script>   
+</body>
+</html>

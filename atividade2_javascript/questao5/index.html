@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 5</title>
+</head>
+<body>
+    <script type="text/javascript">
+        // Elaborar um programa que leia um número – que deve ser uma centena.
+        // Calcule e exiba a centena invertida. Caso o número não seja uma centena,
+        // exiba mensagem.
+
+        let numero = parseInt("Digite uma centena");
+
+        if (numero > 999 || numero < 100){
+            console.log("Não é centena");
+        }
+        else{
+            console.log(numero.toString().split("").reverse().join(""))
+        }
+    </script>
+   
+</body>
+</html>
