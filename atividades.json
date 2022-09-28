@@ -183,6 +183,40 @@
                 }
             ],
             "url_repositorio": "https://github.com/AlexWendel/webdev1/tree/master/atividade1_javascript"
+        },
+        {
+            "titulo": "Atividade 11 - Javascript  2",
+            "alunos": [
+                {"nome": "Alex Wendel Oliveira da Silva"},
+                {"nome": "Paulo Henrique Lopes de Oliveira"}
+            ],
+            "questoes":[
+                {
+                    "questao": "1", 
+                    "url": "atividade2_javascript/questao1"
+                },
+                {
+                    "questao": "2", 
+                    "url": "atividade2_javascript/questao2"
+                },
+                {
+                    "questao": "3", 
+                    "url": "atividade2_javascript/questao3"
+                },
+                {
+                    "questao": "4", 
+                    "url": "atividade2_javascript/questao4"
+                },
+                {
+                    "questao": "5", 
+                    "url": "atividade2_javascript/questao5"
+                },
+                {
+                    "questao": "6", 
+                    "url": "atividade2_javascript/questao6"
+                }
+            ],
+            "url_repositorio": "https://github.com/AlexWendel/webdev1/tree/master/atividade2_javascript"
         }      
     ]    
 }
