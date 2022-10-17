@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 4</title>
+    <script>
+        // Elaborar um programa que leia nome e nota de ‘n’ alunos até o usuário
+        // digitar ‘Fim’ no nome. Após, verifique e exiba a maior nota da turmainitial. Se a
+        // maior nota for superior ou igual a 7, exiba os alunos que a obtiveram. Caso
+        // contrário, exiba a mensagem “Não há alunos em destaque na turma”.
+
+        let nome = "";
+        let nota = 0;
+        let alunos = [];
+
+        while (true){
+            nome = prompt("Nome do aluno: ");
+            if (nome.includes("Fim")) {break;}
+            nota = parseFloat(prompt("Nota do aluno"));
+            alunos.push({'nome': nome, 'nota': nota});
+        }
+
+        function destaqueFilter(value){return (value.nota >= 7)}
+        let destaques = alunos.filter(destaqueFilter);
+        let maiorNota = Math.max.apply(Math, alunos.map((a) => { return a.nota; }));
+        let nomesDestaques = destaques.map((a) => a.nome).join(" ");
+        
+        alert(`Maior nota: ${maiorNota}
+Destaques: ${nomesDestaques}`);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -217,6 +217,74 @@
                 }
             ],
             "url_repositorio": "https://github.com/AlexWendel/webdev1/tree/master/atividade2_javascript"
-        }      
+        },    
+        {
+            "titulo": "Atividade 12 - Javascript  3",
+            "alunos": [
+                {"nome": "Alex Wendel Oliveira da Silva"},
+                {"nome": "Paulo Henrique Lopes de Oliveira"}
+            ],
+            "questoes":[
+                {
+                    "questao": "1", 
+                    "url": "atividade3_javascript/questao1.html"
+                },
+                {
+                    "questao": "2", 
+                    "url": "atividade3_javascript/questao2.html"
+                },
+                {
+                    "questao": "3", 
+                    "url": "atividade3_javascript/questao3.html"
+                },
+                {
+                    "questao": "4", 
+                    "url": "atividade3_javascript/questao4.html"
+                },
+                {
+                    "questao": "5", 
+                    "url": "atividade3_javascript/questao5.html"
+                },
+                {
+                    "questao": "6", 
+                    "url": "atividade3_javascript/questao6.html"
+                }
+            ],
+            "url_repositorio": "https://github.com/AlexWendel/webdev1/tree/master/atividade3_javascript"
+        },
+        {
+            "titulo": "Atividade 13 - Javascript  4",
+            "alunos": [
+                {"nome": "Alex Wendel Oliveira da Silva"},
+                {"nome": "Paulo Henrique Lopes de Oliveira"}
+            ],
+            "questoes":[
+                {
+                    "questao": "1", 
+                    "url": "atividade4_javascript/questao1"
+                },
+                {
+                    "questao": "2", 
+                    "url": "atividade4_javascript/questao2"
+                },
+                {
+                    "questao": "3", 
+                    "url": "atividade4_javascript/questao3"
+                },
+                {
+                    "questao": "4", 
+                    "url": "atividade4_javascript/questao4"
+                },
+                {
+                    "questao": "5", 
+                    "url": "atividade4_javascript/questao5"
+                },
+                {
+                    "questao": "6", 
+                    "url": "atividade4_javascript/questao6"
+                }
+            ],
+            "url_repositorio": "https://github.com/AlexWendel/webdev1/tree/master/atividade4_javascript"
+        }                
     ]    
 }

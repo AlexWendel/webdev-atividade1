@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 6</title>
+    <script>
+        // Elaborar um programa que simule saques em um caixa eletrônico de um
+        // banco. Ler o valor solicitado por clientes até ser digitado 0. Sabendo que o
+        // caixa dispõe apenas de notas de 10, exiba após cada leitura se o saque é
+        // válido ou inválido. Ao final, listar os saques válidos e a soma dos saques.
+        // Exiba também o número de saques inválidos.
+
+        let valor = "";
+        let saques = [];
+
+        while (true){
+            valor = parseInt(prompt("Valor (APENAS MÚLTIPLOS DE 10): "));
+            if (valor == 0) {break;}
+            
+            valido = (valor % 10) == 0;
+            saques.push({'valor': valor, 'valido': valido});
+            alert("Valor de saque " + (valido ? "válido!": "inválido!"));
+        }
+        let validos = saques.filter(saque => saque.valido);
+         alert(`Saques válidos: ${validos.map(saque => saque.valor)}
+Soma dos saques: ${validos.reduce((prev, next) => next.valor + prev.valor)}`);
+    </script>
+</head>
+<body>    
+</body>
+</html>

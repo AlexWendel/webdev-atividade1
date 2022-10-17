@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 3</title>
+    <script>
+        // Faça um algoritmo para ler e armazenar em um Array a temperatura média
+        // de todos os dias de uma semana.
+        // Calcular e escrever:
+        // a) Menor temperatura da semana
+        // b) Maior temperatura da semana        
+        
+        Array.prototype.max = function() {return Math.max.apply(null, this);};
+        Array.prototype.min = function() {return Math.min.apply(null, this);};
+
+        let temperaturas = new Array(7);
+        for (let index = 0; index < 7; index++) {            
+            temperaturas[index] = parseFloat(prompt(`Digite a temperatura para o ${index+1}º dia da semana`));
+        }        
+        alert(`Menor temperatura: ${temperaturas.min()}\nMaior temperatura: ${temperaturas.max()}`);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

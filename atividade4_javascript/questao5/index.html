@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 5</title>
+    <script>
+        // Elaborar um programa que leia nome e idade de ‘n’ clientes de um banco
+        // (até ser digitado ‘Fim’ no nome). Após, classifique e exiba os clientes em 2
+        // grupos: preferencial (a partir de 60 anos) e Fila normal (até 59 anos). Informe
+        // a ordem de atendimento em cada grupo de acordo com a chegada dos
+        // clientes.
+
+        let nome = "";
+        let idade = 0;
+        let clientes = [
+            // {nome: 'José', idade: 74},
+            // {nome: 'Maria', idade: 69},
+            // {nome: 'João', idade: 45},
+            // {nome: 'Valentina', idade: 21},
+            // {nome: 'Gustavo', idade: 22},
+        ];
+
+        while (true){
+            nome = prompt("Nome: ");
+            if (nome.includes("Fim")) {break;}
+            idade = parseInt(prompt("Idade"));
+            clientes.push({'chegada': chegada, 'nome': nome, 'idade': idade});
+            chegada++;
+        }
+        
+        function preferencialFilter(cliente){return (cliente.idade >= 59)}
+
+        
+        let preferencial = clientes.filter(preferencialFilter);
+        let normais = clientes.filter(cliente => !preferencial.includes(cliente));
+        
+        alert(`Ordem preferencial: ${preferencial.map((cliente) => cliente.nome).join(" ")}
+Ordem comum: ${normais.map((cliente) => cliente.nome).join(" ")}`);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
