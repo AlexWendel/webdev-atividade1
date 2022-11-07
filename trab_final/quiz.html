@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="icon" type="image/x-icon" href="/imgs/favicon.ico">
+    <title>Informações | TSE</title>
+</head>
+<body>
+
+    <header>
+        <nav class="navbar is-black" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+                <a class="navar-item" href="index.html">
+                    <img src="imgs/tse.png" alt="">
+                </a>
+                <a class="navbar-item" href="index.html">Tribunal Superior Eleitoral</a>
+                <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbar-content">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+            </div>
+            <div id="navbar-content" class="navbar-menu has-background-black">
+                <div class="navbar-end ">
+                    <a class="navbar-item" href="index.html">
+                        Inicio
+                    </a>
+                    <a class="navbar-item" href="quiz.html">
+                        Quiz
+                    </a>
+                    <a class="navbar-item" href="estatisticas.html">
+                        Estatisticas
+                    </a>
+                    <a class="navbar-item" href="jogo.html">
+                        Jogo
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="quiz" class="section">
+            <div class="header">
+                <h1 class="title is-3" style="letter-spacing: -.5px;">Quiz</h1>
+                <h2 class="subtitle is-5" style="letter-spacing: -1.2px;" >Teste seu conhecimento acerca do processo eleitoral brasileiro</h2>                
+            </div>
+
+            <div class="form">  
+                <div class="header" style="padding-left: 10px; margin-bottom: 1.5em;">
+                    <h2 class="title is-4" style="margin: 0;padding:0;">1. Uma empresa venezuelana é responsável pelas urnas eletrônicas usadas no Brasil.</h2>
+                    <p class="subtitle is-6" style="font-weight:lighter;margin-top:0">Verdadeiro ou fakenews?</p>
+                </div>
+
+                <div class="inputGroup" question="1">
+                    <a value="true">Verdadeiro</a> 
+                    <a value="false">Fakenews</a>
+                </div>
+
+                
+            </div>  
+            <div class="form">  
+                <div class="header" style="padding-left: 10px; margin-bottom: 1.5em;">
+                    <h2 class="title is-4" style="margin: 0;padding:0;">2. A apuração dos votos é feita numa sala secreta por servidores do TSE.</h2>
+                    <p class="subtitle is-6" style="font-weight:lighter;margin-top:0">Verdadeiro ou fakenews?</p>
+                </div>
+
+                <div class="inputGroup" question="2">
+                    <a value="true">Verdadeiro</a> 
+                    <a value="false">Fakenews</a>
+                </div>
+
+                
+            </div>  
+            <div class="form">  
+                <div class="header" style="padding-left: 10px; margin-bottom: 1.5em;">
+                    <h2 class="title is-4" style="margin: 0;padding:0;">3. As urnas eletrônicas imprimem a contagem de votos ao final do pleito.</h2>
+                    <p class="subtitle is-6" style="font-weight:lighter;margin-top:0">Verdadeiro ou fakenews?</p>
+                </div>
+
+                <div class="inputGroup" question="3">
+                    <a value="true">Verdadeiro</a> 
+                    <a value="false">Fakenews</a>
+                </div>
+
+                
+            </div>
+            <div class="form">  
+                <div class="header" style="padding-left: 10px; margin-bottom: 1.5em;">
+                    <h2 class="title is-4" style="margin: 0;padding:0;">4. A urna eletrônica brasileira foi invadida por hackers nos Estados Unidos em 2017.</h2>
+                    <p class="subtitle is-6" style="font-weight:lighter;margin-top:0">Verdadeiro ou fakenews?</p>
+                </div>
+
+                <div class="inputGroup" question="4">
+                    <a value="true">Verdadeiro</a> 
+                    <a value="false">Fakenews</a>
+                </div>
+
+                
+            </div>
+            <div class="form">  
+                <div class="header" style="padding-left: 10px; margin-bottom: 1.5em;">
+                    <h2 class="title is-4" style="margin: 0;padding:0;">5. Nunca houve fraude detectada em urnas.</h2>
+                    <p class="subtitle is-6" style="font-weight:lighter;margin-top:0">Verdadeiro ou fakenews?</p>
+                </div>
+
+                <div class="inputGroup" question="5">
+                    <a value="true">Verdadeiro</a> 
+                    <a value="false">Fakenews</a>
+                </div>
+
+                
+            </div>    
+            <div class="form">  
+                <div class="header" style="padding-left: 10px; margin-bottom: 1.5em;">
+                    <h2 class="title is-4" style="margin: 0;padding:0;">6. O sistema de totalização de votos do TSE não pode ser auditado.</h2>
+                    <p class="subtitle is-6" style="font-weight:lighter;margin-top:0">Verdadeiro ou fakenews?</p>
+                </div>
+
+                <div class="inputGroup" question="6">
+                    <a value="true">Verdadeiro</a> 
+                    <a value="false">Fakenews</a>
+                </div>
+
+                
+            </div>
+
+            <div class="center"><p class="score is-size-1"></p></div>
+        </section>
+    </main>
+
+    <footer class="footer has-background-black">
+        <div class="content has-text-centered">
+            <p>Copyright © 2022 - Tribunal Superior Eleitoral</p>
+        </div>
+    </footer>
+    
+</body>
+<script src="scripts/navbar.js"></script>
+<script src="scripts/quiz.js"></script>
+</html>

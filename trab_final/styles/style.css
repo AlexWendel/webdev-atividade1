@@ -1,0 +1,219 @@
+@import "https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css";
+
+
+html{
+    height: 100%;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    overflow: hidden;
+}
+
+footer{
+    margin-top: auto;
+}
+
+.navbar-menu > a{
+    color: white;
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-title{
+    margin-bottom: 3em;
+}
+
+.section-title > div > p{
+    margin-bottom: 0.5em;
+}
+
+.bar{
+    fill: rgb(172, 8, 172);
+}
+
+.bar:hover{
+    fill: rgb(255, 194, 81);
+}
+
+.graph-container{
+    padding-block: 4em;
+}
+
+.chart{
+    width: 50%;
+    min-height: 450px;
+}
+
+section#splash{
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;    
+}
+
+.inputGroup a {
+    padding: 12px 30px;
+    display: block;
+    text-align: left;
+    color: #3C454C;
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+    transition: color 200ms ease-in;
+    overflow: hidden;
+    border: 2px solid #D1D7DC;
+    border-bottom: 0;;
+    font-weight: 500;
+}
+
+.inputGroup a:hover{
+    background-color: rgb(244, 215, 110);
+}
+
+.inputGroup:last-of-type{
+    border-bottom: 2px solid #D1D7DC;
+}
+
+
+
+.inputGroup >p{
+    color: white;
+    padding: 12px 30px;
+    display: block;
+    text-align: left;
+    position: relative;
+    z-index: 2;
+    transition: color 200ms ease-in;
+    overflow: hidden;
+    border: 2px solid #D1D7DC;
+    border-bottom: 0;;
+    font-weight: 500;
+}
+
+.verdade{
+    background-color: rgb(106, 198, 106);
+}
+
+.fake{
+    background-color: rgb(243, 105, 105);
+}
+
+
+.form {
+    line-height: 2em;
+    margin-bottom: 2em;
+}
+
+section > div.header {
+    margin-bottom: 2em;
+}
+
+.jogo-container {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.forca {
+    fill: transparent;
+    stroke: black;
+    stroke-width: 4px;
+    stroke-linecap: round;
+}
+
+.forca-parte{
+    display: none;
+}
+
+.forca-input{
+    background-color: transparent;
+    top: 69%;
+    border: none;
+    border-bottom: 1px solid black;
+    width: 50%;
+    font-size: 2em;
+    position: absolute;
+    text-align: center;
+    /* color: transparent; */
+    cursor: text;
+}
+
+.forca-display{
+    font-size: 3em;
+}
+
+.forca-input:focus{
+    outline: none !important;
+}
+
+.letras-erradas{
+    font-size: 3em;
+}
+
+.letras-erradas span{
+    padding-right: 1rem;
+}
+
+.forca-display span{
+    padding-right: 1rem;
+}
+
+.popup-container {
+    background-color: rgba(0, 0, 0, 0.849);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    /* display: flex; */
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.popup {
+    background: rgb(179, 63, 179);
+    border-radius: 5px;
+    box-shadow: 0 15px 10px 3px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+}
+
+.aviso-repetido{
+    background-color: rgb(179, 63, 179);
+    color: white;
+    border-radius: 10px 10px 0 0;
+    padding: 15px 20px;
+    position: fixed;
+    transform: translate(-50%);
+    left: 50%;
+    bottom: -55px;
+    transition: transform 0.3s ease-in-out;
+    /* display: none; */
+}
+
+
+.aviso-repetido.show {
+    transform: translate(-50%, -50px);
+    /* transform: translateX(50px); */
+}
+
+@media screen and (max-width: 768px) {
+    .chart{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .chart{
+        width: 100%;
+    }
+}
+

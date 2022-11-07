@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="icon" type="image/x-icon" href="/imgs/favicon.ico">
+    <title>Informações | TSE</title>
+</head>
+<body>
+
+    <header>
+        <nav class="navbar is-black" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+                <a class="navar-item" href="index.html">
+                    <img src="imgs/tse.png" alt="">
+                </a>
+                <a class="navbar-item" href="index.html">Tribunal Superior Eleitoral</a>
+                <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbar-content">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+            </div>
+            <div id="navbar-content" class="navbar-menu has-background-black">
+                <div class="navbar-end ">
+                    <a class="navbar-item" href="index.html">
+                        Inicio
+                    </a>
+                    <a class="navbar-item" href="quiz.html">
+                        Quiz
+                    </a>
+                    <a class="navbar-item" href="estatisticas.html">
+                        Estatisticas
+                    </a>
+                    <a class="navbar-item" href="jogo.html">
+                        Jogo
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="section">
+            <!-- <div class="container"> -->
+                
+            <!-- </div> -->
+            <div class="container has-text-centered">
+                <h1 class="title is-2">Jogo da forca</h1>
+                <h3 class="subtitle">Dica: Eleições</h3>
+            </div>
+            <div class="jogo-container">
+                <div class="forca-container my-6">
+                    <svg height="250" width="200" class="forca">
+                        <!-- forca -->
+                        <line x1="60" y1="20" x2="140" y2="20" />
+                        <line x1="140" y1="20" x2="140" y2="50" />
+                        <line x1="60" y1="20" x2="60" y2="230" />
+                        <line x1="20" y1="230" x2="100" y2="230" />
+              
+                        <!-- cabeça -->
+                        <circle cx="140" cy="70" r="20" class="forca-parte" />
+                        <!-- corpo -->
+                        <line x1="140" y1="90" x2="140" y2="150" class="forca-parte" />
+                        <!-- braços -->
+                        <line x1="140" y1="120" x2="120" y2="100" class="forca-parte" />
+                        <line x1="140" y1="120" x2="160" y2="100" class="forca-parte" />
+                        <!-- pernas -->
+                        <line x1="140" y1="150" x2="120" y2="180" class="forca-parte" />
+                        <line x1="140" y1="150" x2="160" y2="180" class="forca-parte" />
+                      </svg>
+                </div>
+
+                <div class="letras-erradas">
+                    <h3>Letras erradas</h3>
+                </div>
+            </div>
+            <div class="center">
+                <p class="forca-display"></p>
+            </div>
+            <div class="center">
+                <input type="text" class="forca-input">
+            </div>
+        </section>
+
+        
+    </main>
+
+    <div class="aviso-repetido">
+        Você já usou essa letra!
+    </div>
+
+    <div class="popup-container">
+        <div class="popup">
+            <h2 id="mensagem" class="has-text-white mb-3"></h2>
+            <button id="jogar" class="button">Jogar novamente</button>
+        </div>
+    </div>
+
+    <footer class="footer has-background-black">
+        <div class="content has-text-centered">
+            <p>Copyright © 2022 - Tribunal Superior Eleitoral</p>
+        </div>
+    </footer>
+    
+</body>
+<script src="scripts/navbar.js"></script>
+<script src="scripts/forca.js"></script>
+</html>
