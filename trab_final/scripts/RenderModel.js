@@ -42,7 +42,7 @@ function init() {
   document.getElementById("render3d").appendChild(renderer.domElement);
 
   let loader = new THREE.GLTFLoader();
-  loader.load('/trab_final/3d/scene.gltf', function(gltf){
+  loader.load('/webdev1/trab_final/3d/scene.gltf', function(gltf){
     urna = gltf.scene.children[0];
     urna.scale.set(10,10,10);
     urna.position.set(0,0,0);
