@@ -210,10 +210,10 @@ section > div.header {
         width: 100%;
     }
 
-    .navbar-item:hover{
+    /* .navbar-item:hover{
         background-color: rgb(255, 194, 81) !important;
         color: white !important;
-    }
+    } */
 }
 
 @media screen and (max-width: 1023px) {
