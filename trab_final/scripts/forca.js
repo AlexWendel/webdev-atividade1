@@ -86,7 +86,7 @@ function checaEstado(){
     let msg = "";
     if(wrongKeys.length == partes.length){
         msg = 'Você perdeu!'
-        console.log('teste')
+
     }
 
     if(palavraSecreta === display.innerText){
@@ -94,7 +94,7 @@ function checaEstado(){
     }
 
     if(msg.length > 0){
-        console.log('perdeu')
+
         document.querySelector("#mensagem").innerText = msg;
         document.querySelector(".popup-container").style.display = 'flex'
     }
